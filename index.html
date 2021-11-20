@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Coin Prompt</title>
+  </head>
+  <body>
+    <!-- Top navbar  -->
+    <nav id="top-nav" class="w-100 px-2 px-sm-0">
+      <div class="container d-flex justify-content-between align-items-center p-3">
+        <div id="logo">
+          <p class="text-uppercase fw-bold">coin prompt</p>
+        </div>
+        <div id="profile-display">
+          <a href="#"><i class="far fa-user-circle fa-2x"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main body container -->
+    <section id="main" class="w-100">
+      <div class="container mt-5">
+        <div class="d-flex flex-wrap gap-4">
+          <!-- Coins listing column -->
+          <div id="coins-listing" class="d-flex flex-column flex-grow-1 p-4 p-sm-5 position-relative">
+            <div id="set-alerts-overlay" class="bg-success position-absolute">
+              <button class="btn btn-warning">close</button>
+            </div>
+            <div class="input-group w-100">
+              <input type="text" name="search-coin" id="search-coin" class="form-control" placeholder="Search coin...">
+              <i class="fa fa-search input-group-text pt-2"></i>
+            </div>
+            <br>
+            <div class="row opacity-75 mx-1">
+              <div class="col-5 col-sm-6">Coin</div>
+              <div class="col-3 col-sm-3">Price</div>
+              <div class="col-4 col-sm-3 text-end">24hrs change(%)</div>
+            </div>
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center uptrend fw-bold">+5% <i class="fas fa-long-arrow-alt-up"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center downtrend">- 4.65% <i class="fas fa-long-arrow-alt-down"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center uptrend fw-bold">+5% <i class="fas fa-long-arrow-alt-up"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center downtrend">- 4.65% <i class="fas fa-long-arrow-alt-down"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center uptrend fw-bold">+5% <i class="fas fa-long-arrow-alt-up"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center downtrend">- 4.65% <i class="fas fa-long-arrow-alt-down"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center uptrend fw-bold">+5% <i class="fas fa-long-arrow-alt-up"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center downtrend">- 4.65% <i class="fas fa-long-arrow-alt-down"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center uptrend fw-bold">+5% <i class="fas fa-long-arrow-alt-up"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>
+
+            <div class="coin-display-card row mx-1 my-3 py-3 position-relative">
+              <div class="col-5 col-sm-6"><i class="fab fa-bitcoin mx-1"></i>BTC</div>
+              <div class="col-3 col-sm-3">$51,497</div>
+              <div class="col-4 col-sm-3 text-center downtrend">- 4.65% <i class="fas fa-long-arrow-alt-down"></i></div>
+              <div class="set-alert-button position-absolute bg-danger text-white"> <p class="text-center mt-3 text-uppercase">set alert</p> </div>
+            </div>  
+          </div>
+          <!-- Alerts Display Column -->
+          <div id="active-alerts" class="d-flex flex-column align-items-center justify-content-center flex-grow-1 p-5">
+              <img src="./img/no-alerts.jpg" alt="">
+              <div class="h4 fw-normal text-center">No active alerts</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
